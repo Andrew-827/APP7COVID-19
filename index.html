@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 The goal of this code is to help a patient or user distinguish between allergies and the common other. The code is supposed to ask a series of questions to diagnose one or the other.
  
 Known Issues:
-This app is extremely basic and doesn't include a comprehensive amount of questions to distinguish between other and allergies.
+This app is extremely basic and doesn't include a comprehensive amount of questions to distinguish between COVID19 and other health issues.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -57,7 +57,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var covid19Percent= covid19_count/ (covid19_count + other_count) * 100; // a variable to create percent likelihood of allergies
 		var otherPercent= other_count/ (covid19_count+ other_count)* 100; // a variable to create percent likelihood of other
 		var resultText = document.getElementById("results"); // 
-		resultText.innerHTML = "Probability it is allergies =" + covid19Percent + "%<br> Probability it is something other than COVID-19=" + otherPercent + "%"; 
+		resultText.innerHTML = "The Probability that it is COVID-19  =" + covid19Percent + "%<br> Probability it is something other than COVID-19=" + otherPercent + "%"; 
 	
 
 		
