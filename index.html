@@ -34,6 +34,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 	<script>
+		
+	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+	
 	var covid19_count = 0; // creates a variable known as covid19_count and stores the initial value as zero (tally of symptoms leaning towards covid19 diagnosis)
         var other_count = 0; // creates a variable known as other_count and stores the initial value as zero. (tally of symptoms leaning towards other diagnosis)
 	var resultText = document.getElementById("results"); // creates variable for our actual final result
@@ -54,11 +59,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var resultText = document.getElementById("results"); // 
 		resultText.innerHTML = "Probability it is allergies =" + covid19Percent + "%<br> Probability it is something other than COVID-19=" + otherPercent + "%"; 
 	
-	
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-	
+
 		
 
 
